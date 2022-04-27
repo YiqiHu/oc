@@ -1,0 +1,36 @@
+.problem-page {
+  background: #fff;
+
+  transition: all 0.3s ease-out;
+
+  .action {
+    background: #fff;
+    display: flex;
+    font-weight: bolder;
+    border-left: 1px solid #eee;
+    align-items: center;
+    &:hover {
+      background: rgba(16, 142, 233, 0.15);
+    }
+  }
+  
+  .left {
+    min-height: 100%;
+    transition: all 0.3s ease-out;
+    .problem-detail {
+      flex: 1;
+    }
+  }
+  .right {
+    display: flex;
+    transition: all 0.3s ease-out;
+    .code-edit {
+      flex: 1;
+    }
+    @media screen and (max-width: 575px) {
+      .action {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.contest-rank-table {
+  background: #fff;
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #f0f2f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .ant-table-title {
+    padding: 0;
+  }
+  .ant-table-tbody>tr>td {
+    font-size: 12px;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .ant-table-thead>tr>th {
+    font-size: 12px;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .contest-rank-table-title {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.contest-info {
+  &-content {
+    margin-top: 20px;
+
+    &-table {
+      border-radius: 4px;
+    }
+  }
+
+  &-user {
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-time {
+    max-width: 90px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    div {
+      padding: 2px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      /*垂直居中*/
+      justify-content: center;
+    }
+  }
+}
